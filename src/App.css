@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: rgba(51,51,51,.2);
+  height: 150px;
+  padding: 20px;
+  color: #333;
+}
+
+.App-body {
+  padding: 20px; 
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.rocket-image-wrapper {
+  position: relative; 
+  height: 300px; 
+  transition: all 5s; 
+  transform-origin: 20% 75%; 
+}
+
+.rocket-image {
+  transform: rotate(-45deg); 
+  position: absolute; 
+  left: 0px; 
+  bottom: 0px; 
+  display: inline-block; 
+  padding: 1em; 
+  transition: transform 5s; 
+}
+
+html:hover .rocket-image-wrapper {
+  transform: rotate(100deg); 
+}
+
+html:hover .rocket-image {
+  transform: rotate(-90deg); 
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
