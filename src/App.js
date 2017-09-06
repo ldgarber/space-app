@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import rocket from './rocket.svg'; 
 import './App.css';
-import { Button, Container, Row, Col } from 'reactstrap'; 
-import { RocketImage } from './components/RocketImage'; 
+import { AppBody } from './components/AppBody'; 
 
 class App extends Component {
   render() {
@@ -13,21 +12,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to Space</h2>
         </div>
-        <Container className="App-body">
-          <Row>
-            <Col>
-              <Button color="primary">Liftoff!</Button>
-            </Col> 
-            <Col>
-              <Button color="danger">Abort!</Button>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <RocketImage img={rocket}/> 
-            </Col>
-          </Row>
-        </Container>
+        <AppBody rocketImage={rocket} />
       </div>
     );
   }

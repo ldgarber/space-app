@@ -39,12 +39,12 @@
   transition: transform 5s; 
 }
 
-html:hover .rocket-image-wrapper {
+ .rocket-image-wrapper-active {
   transform: rotate(100deg); 
 }
 
-html:hover .rocket-image {
-  transform: rotate(-90deg); 
+.rocket-image-active {
+  transform: rotate(-70deg); 
 }
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
